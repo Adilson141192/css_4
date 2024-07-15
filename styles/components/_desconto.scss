@@ -1,21 +1,18 @@
 @use '../abstract/variaveis';
 @use '../abstract/mixins';
 
-#desconto {
+#desconto{
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-
-    h4 {
+    h4{
         @include mixins.ff-fs-cl(variaveis.$ft-titulos, 1.6rem, variaveis.$cor-primaria);
     }
-
-    p {
+    p{
         @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, variaveis.$cor-primaria);
     }
-
-    .input-btn {
+    .input-btn{
         $largura-input: 790px;
         width: $largura-input;
         height: 65px;
@@ -23,16 +20,14 @@
         border-radius: 65px;
         margin: 0 auto;
         display: inline-flex;
-
-        input {
+        input{
             @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, variaveis.$cor-primaria);
             width: calc($largura-input * 0.65);
             border: none;
             outline: none;
             margin-left: 2rem;
         }
-
-        button {
+        button{
             @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, white);
             width: calc($largura-input * 0.35);
             background: variaveis.$cor-secundaria;
